@@ -1,0 +1,9 @@
+<div>
+  <app-layout></app-layout>
+  <form class="form" (ngSubmit) = "onSubmit()">
+    <input type="text" name="city" [(ngModel)]="cityName" placeholder="Which city would you like to search.."><br/>
+    <input type="submit" value="submit" class="btnSubmit">
+  </form>
+</div>
+<app-search-item *ngFor="let item of searchArray" [item]="item">
+</app-search-item>

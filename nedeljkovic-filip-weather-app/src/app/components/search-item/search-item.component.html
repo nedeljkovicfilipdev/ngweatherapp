@@ -1,0 +1,6 @@
+<div>
+  <p>
+    <button [routerLink]="['/about',item.title,item.woeid]" (click)="visit()">Visit</button>
+    {{item.title | json}}
+  </p>
+</div>

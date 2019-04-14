@@ -1,0 +1,15 @@
+<div>
+  <app-layout></app-layout>
+  <h1>This is City Weather Page</h1>
+  <div *ngFor="let item of searchArray">
+    {{item | json}}
+  </div>
+  <br/>
+  <h3>
+    Detailed information about city !
+    <br/>
+  </h3>
+  <div>
+    {{aboutCity | json }}
+  </div>
+</div>
